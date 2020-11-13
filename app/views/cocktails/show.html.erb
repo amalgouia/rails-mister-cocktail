@@ -2,5 +2,18 @@
   <%= @cocktail.name %>
 </h1>
 
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h2 class="card-title">Description</h2>
 
-
+    <% if @doses %>
+      <%= @doses.each do |dose| %>
+      <p class="card-text">
+        <%= dose.description %>
+      </p>
+      <% end %>
+    <% end %>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>

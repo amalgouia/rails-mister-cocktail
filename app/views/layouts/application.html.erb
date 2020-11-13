@@ -14,6 +14,30 @@
   </head>
 
   <body>
+
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+
+  <a class="navbar-brand" href="/">
+    <img src="https://previews.123rf.com/images/sabelskaya/sabelskaya1608/sabelskaya160800212/61939909-abstrait-color%C3%A9-logo-cocktail-illustration-vectorielle-isol%C3%A9-sur-fond-blanc-moderne-ic%C3%B4ne-de-boisson-alcool.jpg" />
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        <%= link_to "Add a new cocktail", new_cocktail_path, :class => "btn btn-outline-secondary" %>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
     <%= yield %>
   </body>
 </html>
